@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0f1521;
+  --color-panel: #1b2436;
+  --color-bone: #e8e3d9;
+  --color-ember: #c97b5c;
+  --color-slate: #5b7a8c;
+  --color-sage: #8fa89b;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(201, 123, 92, 0.15),
+      0 0 40px 10px rgba(201, 123, 92, 0.08);
+  }
+  50% {
+    box-shadow:
+      0 0 0 8px rgba(201, 123, 92, 0.05),
+      0 0 60px 20px rgba(201, 123, 92, 0.15);
+  }
+}
+
+.animate-breathe {
+  animation: breathe 4s ease-in-out infinite;
+}
