@@ -1,35 +1,68 @@
-Mira
+# Mira
 
-Mira is a privacy-first AI companion that helps users process difficult emotions, recognize recurring thought patterns, and gain perspective through personalized conversations and long-term memory.
+> *a companion with wisdom and memory and unconditional presence.*
 
-Overview
+Mira was born at 2am, out of a sleepless night and a cringe reel that wouldn't stop playing.
 
-Mira combines conversational AI, user-controlled memory, and relationship mapping to create a more personalized support experience. Instead of treating every conversation as a new interaction, Mira can build an understanding of important people, events, goals, and experiences over time.
+The idea was simple: what if there was something that could talk you off the ledge — and actually remember who you are? Not a chatbot that forgets you the moment the session ends. Something that builds a picture of your life over time, and meets you where you are.
 
-The platform is designed to help users while giving them full control over their data.
+That's Mira.
 
-Features
+---
 
-* AI-powered conversational support
-* User-controlled long-term memory
-* Graph-based relationship and life-event mapping
-* Personalized reflections and insights
-* Semantic search and contextual retrieval
-* Privacy-first architecture
+## what mira does
 
-Tech Stack
+- reads your emotional state when you open the app (via facial recognition)
+- converses with you with warmth and without judgment
+- remembers your story — people, events, patterns — across sessions
+- draws quietly from the wisdom of teachers like Eckhart Tolle and Ram Dass, without hitting you with the jargon
+- gives you full control over your own memories: create, update, delete, anytime
 
-* React
-* Node.js / Express
-* Graph Database
-* Vector Database
-* AWS Services
-* Large Language Models (LLMs)
+---
 
-Privacy
+## tech stack
 
-Mira is built around user trust. Memories are stored only with user consent, and users can view, edit, export, or permanently delete their data at any time.
+| layer | technology |
+|---|---|
+| frontend | React |
+| backend | Node.js / Express |
+| face analysis | AWS Rekognition |
+| voice | AWS Polly (ElevenLabs planned) |
+| AI brain | AWS Bedrock |
+| memory | Graph Database |
+| wisdom library | Vector Database |
+| language | TypeScript |
 
-Vision
+---
 
-To create an AI companion that helps people through secure, personalized, and long-term conversations.
+## architecture
+
+human memory isn't a list of records. it's a web — people connected to events, events connected to feelings, feelings connected to patterns. Mira uses a graph database to model this more faithfully.
+
+after each session, Mira distills the conversation, extracts what matters, and stores it securely. encryption is baked in from day one.
+
+---
+
+## privacy
+
+mira is built around user trust.
+
+memories are stored only with consent. users can view, edit, export, or permanently delete their data at any time. no exceptions.
+
+---
+
+## current status
+
+early days. the React frontend and Node.js backend are live. facial emotion detection via AWS Rekognition is working.
+
+next: Bedrock and Polly.
+
+follow the build on substack: [sagi0312.substack.com](https://sagi0312.substack.com)
+
+---
+
+## want to contribute?
+
+whether that's code, design, security, AI, psychology, or simply feedback — i would love your help.
+
+open an issue, start a discussion, or reach out directly.
