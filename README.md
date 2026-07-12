@@ -114,7 +114,7 @@ pending / verify:
 - guru system prompt: persona, safety boundary, memory-layer usage
 - LLM provider decision (Bedrock was ruled out, Tinker deferred; hosted model + cached system prompt is the approach). data retention and no-training-on-inputs are selection criteria, not afterthoughts
 - AWS billing alarms: free, two minutes, do now. an exposed LLM + voice endpoint is a money faucet, alarms are the smoke detector
-- Rekognition data-retention opt-out: upgrade to "before any real face image is sent"
+- Rekognition data-retention opt-out: upgrade now.
 - EU AI Act: emotion recognition is regulated in the EU, check before any EU users
 
 follow the build on substack: sagi0312.substack.com
