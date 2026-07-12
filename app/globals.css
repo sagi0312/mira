@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --night-top: #060a12;
+  --night-mid: #0a1220;
+  --night-deep: #0d1930;
+  --moon: #e2e8f0;
+  --mist: #94a3b8;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-night: var(--night-top);
+  --color-moon: var(--moon);
+  --color-mist: var(--mist);
+
+  --font-display: var(--font-cormorant);
+  --font-body: var(--font-jost);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  height: 100%;
+  background: var(--night-top);
+  overflow: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jost), sans-serif;
+}
+
+@keyframes settle {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-settle {
+  opacity: 0;
+  animation: settle 3.2s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-settle {
+    animation-duration: 0.01ms;
+    opacity: 1;
+  }
 }
